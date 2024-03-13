@@ -56,41 +56,41 @@ const LLM = memo(() => {
           label: useAzure ? t('llm.AzureOpenAI.token.title') : t('llm.OpenAI.token.title'),
           name: [LLMProviderConfigKey, providerKey, 'OPENAI_API_KEY'],
         },
-        {
-          children: (
-            <Input
-              allowClear
-              placeholder={
-                useAzure
-                  ? t('llm.AzureOpenAI.endpoint.placeholder')
-                  : t('llm.OpenAI.endpoint.placeholder')
-              }
-            />
-          ),
-          desc: useAzure ? t('llm.AzureOpenAI.endpoint.desc') : t('llm.OpenAI.endpoint.desc'),
-          label: useAzure ? t('llm.AzureOpenAI.endpoint.title') : t('llm.OpenAI.endpoint.title'),
-          name: [LLMProviderConfigKey, providerKey, 'endpoint'],
-        },
-        {
-          children: (
-            <Input.TextArea
-              allowClear
-              placeholder={t('llm.OpenAI.customModelName.placeholder')}
-              style={{ height: 100 }}
-            />
-          ),
-          desc: t('llm.OpenAI.customModelName.desc'),
-          label: t('llm.OpenAI.customModelName.title'),
-          name: [LLMProviderConfigKey, providerKey, 'customModelName'],
-        },
-        {
-          children: <Switch />,
-          desc: t('llm.OpenAI.useAzure.desc'),
-          label: t('llm.OpenAI.useAzure.title'),
-          minWidth: undefined,
-          name: [LLMProviderConfigKey, 'openAI', 'useAzure'],
-          valuePropName: 'checked',
-        },
+        // {
+        //   children: (
+        //     <Input
+        //       allowClear
+        //       placeholder={
+        //         useAzure
+        //           ? t('llm.AzureOpenAI.endpoint.placeholder')
+        //           : t('llm.OpenAI.endpoint.placeholder')
+        //       }
+        //     />
+        //   ),
+        //   desc: useAzure ? t('llm.AzureOpenAI.endpoint.desc') : t('llm.OpenAI.endpoint.desc'),
+        //   label: useAzure ? t('llm.AzureOpenAI.endpoint.title') : t('llm.OpenAI.endpoint.title'),
+        //   name: [LLMProviderConfigKey, providerKey, 'endpoint'],
+        // },
+        // {
+        //   children: (
+        //     <Input.TextArea
+        //       allowClear
+        //       placeholder={t('llm.OpenAI.customModelName.placeholder')}
+        //       style={{ height: 100 }}
+        //     />
+        //   ),
+        //   desc: t('llm.OpenAI.customModelName.desc'),
+        //   label: t('llm.OpenAI.customModelName.title'),
+        //   name: [LLMProviderConfigKey, providerKey, 'customModelName'],
+        // },
+        // {
+        //   children: <Switch />,
+        //   desc: t('llm.OpenAI.useAzure.desc'),
+        //   label: t('llm.OpenAI.useAzure.title'),
+        //   minWidth: undefined,
+        //   name: [LLMProviderConfigKey, 'openAI', 'useAzure'],
+        //   valuePropName: 'checked',
+        // },
         {
           children: (
             <AutoComplete

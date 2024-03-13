@@ -77,30 +77,30 @@ const BottomActions = memo<BottomActionProps>(({ tab }) => {
     {
       type: 'divider',
     },
-    {
-      icon: <Icon icon={Feather} />,
-      key: 'feedback',
-      label: t('feedback'),
-      onClick: () => window.open(FEEDBACK, '__blank'),
-    },
-    {
-      icon: <Icon icon={FileClock} />,
-      key: 'changelog',
-      label: t('changelog'),
-      onClick: () => window.open(CHANGELOG, '__blank'),
-    },
-    {
-      icon: <Icon icon={DiscordIcon} />,
-      key: 'wiki',
-      label: 'Discord',
-      onClick: () => window.open(DISCORD, '__blank'),
-    },
-    {
-      icon: <Icon icon={Heart} />,
-      key: 'about',
-      label: t('about'),
-      onClick: () => window.open(ABOUT, '__blank'),
-    },
+    // {
+    //   icon: <Icon icon={Feather} />,
+    //   key: 'feedback',
+    //   label: t('feedback'),
+    //   onClick: () => window.open(FEEDBACK, '__blank'),
+    // },
+    // {
+    //   icon: <Icon icon={FileClock} />,
+    //   key: 'changelog',
+    //   label: t('changelog'),
+    //   onClick: () => window.open(CHANGELOG, '__blank'),
+    // },
+    // {
+    //   icon: <Icon icon={DiscordIcon} />,
+    //   key: 'wiki',
+    //   label: 'Discord',
+    //   onClick: () => window.open(DISCORD, '__blank'),
+    // },
+    // {
+    //   icon: <Icon icon={Heart} />,
+    //   key: 'about',
+    //   label: t('about'),
+    //   onClick: () => window.open(ABOUT, '__blank'),
+    // },
     {
       type: 'divider',
     },

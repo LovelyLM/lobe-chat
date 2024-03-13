@@ -26,20 +26,20 @@ export default memo<{ showOllama: boolean }>(({ showOllama }) => {
       <PageTitle title={t('tab.llm')} />
       <OpenAI />
       {/*<AzureOpenAI />*/}
-      {showOllama && <Ollama />}
-      <Anthropic />
-      <Google />
-      <Bedrock />
-      <Perplexity />
-      <Mistral />
-      <Moonshot />
-      <Zhipu />
+      {/*{showOllama && <Ollama />}*/}
+      {/*<Anthropic />*/}
+      {/*<Google />*/}
+      {/*<Bedrock />*/}
+      {/*<Perplexity />*/}
+      {/*<Mistral />*/}
+      {/*<Moonshot />*/}
+      {/*<Zhipu />*/}
       <Footer>
         <Trans i18nKey="llm.waitingForMore" ns={'setting'}>
           更多模型正在
-          <Link aria-label={'todo'} href={MORE_MODEL_PROVIDER_REQUEST_URL} target="_blank">
+          {/*<Link aria-label={'todo'} href={MORE_MODEL_PROVIDER_REQUEST_URL} target="_blank">*/}
             计划接入
-          </Link>
+          {/*</Link>*/}
           中 ，敬请期待 ✨
         </Trans>
       </Footer>

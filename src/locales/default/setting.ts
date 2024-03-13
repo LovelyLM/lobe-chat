@@ -154,9 +154,9 @@ export default {
       },
       title: 'OpenAI',
       token: {
-        desc: '使用自己的 OpenAI Key',
-        placeholder: 'OpenAI API Key',
-        title: 'OpenAI API Key',
+        desc: '使用自己的 Ai助手 Key',
+        placeholder: 'Ai助手 Key',
+        title: 'Ai助手 Key',
       },
       useAzure: {
         desc: '使用 Azure 提供的 OpenAI 服务',
@@ -406,6 +406,7 @@ export default {
     tooltips: '分享到助手市场',
   },
   tab: {
+    about: '关于',
     agent: '默认助手',
     common: '通用设置',
     llm: '语言模型',
