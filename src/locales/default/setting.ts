@@ -406,7 +406,6 @@ export default {
     tooltips: '分享到助手市场',
   },
   tab: {
-    about: '关于',
     agent: '默认助手',
     common: '通用设置',
     llm: '语言模型',
