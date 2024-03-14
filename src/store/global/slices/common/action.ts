@@ -56,10 +56,10 @@ export const createCommonSlice: StateCreator<
     useSWR('checkLatestVersion', globalService.getLatestVersion, {
       // check latest version every 30 minutes
       focusThrottleInterval: 1000 * 60 * 30,
-      onSuccess: (data: string) => {
-        if (gt(data, CURRENT_VERSION))
-          set({ hasNewVersion: true, latestVersion: data }, false, n('checkLatestVersion'));
-      },
+      // onSuccess: (data: string) => {
+      //   if (gt(data, CURRENT_VERSION))
+      //     set({ hasNewVersion: true, latestVersion: data }, false, n('checkLatestVersion'));
+      // },
     }),
   useCheckTrace: (shouldFetch) =>
     useSWR<boolean>(

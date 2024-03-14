@@ -56,7 +56,7 @@ export default {
       '很抱歉，你的所在位置不支持此模型服务，可能是由于地区限制或服务未开通。请确认当前位置是否支持使用此服务，或尝试使用其他位置信息。',
 
     OpenAIBizError: '请求 OpenAI 服务出错，请根据以下信息排查或重试',
-    NoOpenAIAPIKey: 'OpenAI API Key 为空，请添加自定义 OpenAI API Key',
+    NoOpenAIAPIKey: 'Ai助手 Key 为空，请添加Ai助手会员 Key',
 
     ZhipuBizError: '请求智谱服务出错，请根据以下信息排查或重试',
     InvalidZhipuAPIKey: 'Zhipu API Key 不正确或为空，请检查 Zhipu API Key 后重试',
@@ -120,8 +120,8 @@ export default {
       },
       OpenAI: {
         addProxyUrl: '添加 OpenAI 代理地址（可选）',
-        description: '输入你的 OpenAI API Key 即可开始会话。应用不会记录你的 API Key',
-        title: '使用自定义 OpenAI API Key',
+        description: '输入你的 Ai助手 Key 即可开始会话。',
+        title: '请输入 Ai助手 Key',
       },
       Perplexity: {
         description: '输入你的 Perplexity API Key 即可开始会话。应用不会记录你的 API Key',

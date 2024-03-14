@@ -19,24 +19,24 @@ const Footer = memo(() => {
         ©{new Date().getFullYear()} LobeHub
       </span>
       <Flexbox horizontal>
-        <ActionIcon
-          icon={DiscordIcon}
-          onClick={() => window.open(DISCORD, '__blank')}
-          size={'site'}
-          title={'Discord'}
-        />
-        <ActionIcon
-          icon={Book}
-          onClick={() => window.open(DOCUMENTS, '__blank')}
-          size={'site'}
-          title={t('document')}
-        />
-        <ActionIcon
-          icon={Github}
-          onClick={() => window.open(GITHUB, '__blank')}
-          size={'site'}
-          title={'GitHub'}
-        />
+        {/*<ActionIcon*/}
+        {/*  icon={DiscordIcon}*/}
+        {/*  onClick={() => window.open(DISCORD, '__blank')}*/}
+        {/*  size={'site'}*/}
+        {/*  title={'Discord'}*/}
+        {/*/>*/}
+        {/*<ActionIcon*/}
+        {/*  icon={Book}*/}
+        {/*  onClick={() => window.open(DOCUMENTS, '__blank')}*/}
+        {/*  size={'site'}*/}
+        {/*  title={t('document')}*/}
+        {/*/>*/}
+        {/*<ActionIcon*/}
+        {/*  icon={Github}*/}
+        {/*  onClick={() => window.open(GITHUB, '__blank')}*/}
+        {/*  size={'site'}*/}
+        {/*  title={'GitHub'}*/}
+        {/*/>*/}
       </Flexbox>
     </Flexbox>
   );

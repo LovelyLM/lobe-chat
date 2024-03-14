@@ -36,26 +36,26 @@ const OpenAIForm = memo(() => {
         type={'block'}
         value={apiKey}
       />
-      {showProxy ? (
-        <Input
-          onChange={(e) => {
-            setConfig('openAI', { endpoint: e.target.value });
-          }}
-          placeholder={'https://api.openai.com/v1'}
-          type={'block'}
-          value={proxyUrl}
-        />
-      ) : (
-        <Button
-          icon={<Icon icon={Network} />}
-          onClick={() => {
-            setShow(true);
-          }}
-          type={'text'}
-        >
-          {t('unlock.apikey.OpenAI.addProxyUrl')}
-        </Button>
-      )}
+      {/*{showProxy ? (*/}
+      {/*  <Input*/}
+      {/*    onChange={(e) => {*/}
+      {/*      setConfig('openAI', { endpoint: e.target.value });*/}
+      {/*    }}*/}
+      {/*    placeholder={'https://api.openai.com/v1'}*/}
+      {/*    type={'block'}*/}
+      {/*    value={proxyUrl}*/}
+      {/*  />*/}
+      {/*) : (*/}
+      {/*  <Button*/}
+      {/*    icon={<Icon icon={Network} />}*/}
+      {/*    onClick={() => {*/}
+      {/*      setShow(true);*/}
+      {/*    }}*/}
+      {/*    type={'text'}*/}
+      {/*  >*/}
+      {/*    {t('unlock.apikey.OpenAI.addProxyUrl')}*/}
+      {/*  </Button>*/}
+      {/*)}*/}
     </FormAction>
   );
 });
