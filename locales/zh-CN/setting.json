@@ -153,9 +153,9 @@
       },
       "title": "OpenAI",
       "token": {
-        "desc": "使用自己的 OpenAI Key",
-        "placeholder": "OpenAI API Key",
-        "title": "OpenAI API Key"
+        "desc": "使用自己的 Ai助手 Key",
+        "placeholder": "Ai助手 Key",
+        "title": "Ai助手 Key"
       },
       "useAzure": {
         "desc": "使用 Azure 提供的 OpenAI 服务",
