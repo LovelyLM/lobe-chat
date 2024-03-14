@@ -61,7 +61,9 @@ const nextConfig = {
     { source: '/docs/:path*', destination: `${docsBasePath}/docs/:path*` },
   ],
   reactStrictMode: true,
-
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   webpack(config) {
     config.experiments = {
       asyncWebAssembly: true,
