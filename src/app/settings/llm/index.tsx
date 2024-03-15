@@ -37,9 +37,7 @@ export default memo<{ showOllama: boolean }>(({ showOllama }) => {
       <Footer>
         <Trans i18nKey="llm.waitingForMore" ns={'setting'}>
           更多模型正在
-          {/*<Link aria-label={'todo'} href={MORE_MODEL_PROVIDER_REQUEST_URL} target="_blank">*/}
             计划接入
-          {/*</Link>*/}
           中 ，敬请期待 ✨
         </Trans>
       </Footer>
